@@ -511,14 +511,39 @@ margin-bottom: 16px;
 
 .footer-container{
     display: flex;
-    justify-content: baseline;
-    align-items:  baseline;
-    gap:120px;
+    }
+
+.foot-form-cont{
+    
+}
+
+.foot-label{
+margin-right: 24px;
+}
+
+.footer-input{
+    height: 40px;
+    min-width: 264px;
+    margin-top: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid var(--background-body-color);
+background-color: transparent;
+outline: transparent;
+}
+
+.footer-input:focus{
+border: 1px solid var(--primary-brand-color);
 }
 
 .footer-text-container{
     margin-right: 120px;
 }
+
+.social-med-cont-foot{
+margin-right: 80px;
+}
+
 .social-media-list-footer {
     display: flex;
     align-items: center;
@@ -557,10 +582,31 @@ margin-bottom: 16px;
     background-color: var(--primary-brand-color);
     color:var(--light-text-color);
     border-radius: 4px;
+    padding: 8px 24px;
+    min-width: 165px;
+    height: 40px;
+    margin-top: 40px;
+    text-align: left;
+    position: relative;
+    
 }
 
-.foot-button{
+.foot-button:hover, .foot-button:focus{
     background-color: var(--active-color);
+
+    
+}
+
+.footer-form-subsc{
+display: flex;
+width: 264px;
+}
+
+.foot-icon{
+    fill: var(--modal-light-icon-color);
+    position: absolute;
+    top: 8px;
+    right: 24px;
 }
 
 /* Modal window */
@@ -660,8 +706,9 @@ height: 40px;
 border-radius: 4px;
 border: 1px solid rgba(46, 47, 66, 0.40);
 margin:0 auto;
-padding-left: 38px;
+padding: 11px 38px;
 outline:transparent;
+font-size: 18px;
 }
 
 /* .label-modal:hover .input-modal{
@@ -693,11 +740,17 @@ outline:transparent;
     font-size: 12px;
     color: currentColor;
     outline: transparent;
+    font-size: 18px;
 }
 
 /* .textarea-modal:hover{
 border: 1px solid var(--primary-brand-color);
 } */
+
+.textarea-modal:focus{
+border: 1px solid var(--primary-brand-color);
+}
+
 
 .form:focus-within .input-modal{
 border: 1px solid var(--primary-brand-color);
@@ -754,16 +807,16 @@ text-decoration: underline;
 .input-icons{
     fill: var(--dark-brand-color);
     position: absolute;
-    bottom: -5px;
+    top: 26px;
     left: 0;
     margin-left: 16px;
 
     /* margin-bottom: 28px; */
 }
 
-.label-modal:hover .input-icons{
+/* .label-modal:hover .input-icons{
 fill: var(--primary-brand-color);
-}
+} */
 
 .label-modal:focus .input-icons {
     fill: var(--primary-brand-color);
