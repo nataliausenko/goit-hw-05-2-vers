@@ -705,8 +705,9 @@ fill:var(--modal-light-icon-color);
 color: var(--dark-brand-color-text);
 text-align: center;
 font-weight: 500;
-line-height: 1.5;
-letter-spacing: 0.32px;
+/* line-height: inherit;
+font-size: inherit;
+letter-spacing: inherit; */
 margin-top: 48px;
 margin-bottom: 16px;
 
@@ -715,9 +716,11 @@ margin-bottom: 16px;
 .label-modal{
     color: var(--label-modal-text);
     font-size: 12px;
-    line-height: 1.2;
-    letter-spacing: 0.48px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     position: relative;
+    display: block;
+    margin-bottom: 4px;
 }
 
 .input-modal{
