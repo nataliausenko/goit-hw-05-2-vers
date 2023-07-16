@@ -516,11 +516,13 @@ margin-bottom: 16px;
 .foot-form-cont{
     display: flex;
     gap: 24px;
-    flex-direction: column;
 }
 
 .foot-par{
 margin-bottom: 16px;
+}
+.foot-label{
+
 }
 
 .footer-input{
@@ -531,6 +533,15 @@ margin-bottom: 16px;
     border: 1px solid var(--background-body-color);
 background-color: transparent;
 outline: transparent;
+font-size: 12px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+color: var(--light-text-color);
+}
+
+.footer-input::placeholder{
+color: var(--light-text-color);
 }
 
 .footer-input:focus{
@@ -580,16 +591,26 @@ margin-right: 80px;
 .foot-button{
     padding: 8px 24px;
     border: none;
-    background-color: var(--primary-brand-color);
-    color:var(--light-text-color);
     border-radius: 4px;
     padding: 8px 24px;
     min-width: 165px;
     height: 40px;
     margin-top: 40px;
     text-align: left;
-    position: relative;
+    background-color: var(--primary-brand-color);
+    cursor: pointer;
+
+    color:var(--light-text-color);
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: 500px;
+    letter-spacing: 0.04em;
+
     
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .foot-button:hover, .foot-button:focus{
@@ -605,9 +626,7 @@ width: 264px;
 
 .foot-icon{
     fill: var(--modal-light-icon-color);
-    position: absolute;
-    top: 8px;
-    right: 24px;
+    margin-left: 16px;
 }
 
 /* Modal window */
