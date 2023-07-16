@@ -594,8 +594,7 @@ margin-right: 80px;
     border-radius: 4px;
     padding: 8px 24px;
     min-width: 165px;
-    height: 40px;
-    margin-top: 40px;
+    height: 40px; 
     text-align: left;
     background-color: var(--primary-brand-color);
     cursor: pointer;
@@ -621,6 +620,7 @@ margin-right: 80px;
 
 .footer-form-subsc{
 display: flex;
+flex-direction: column;
 width: 264px;
 }
 
@@ -751,6 +751,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .label-container-textarea{
     margin-bottom: 16px;
+    height: 138px;
 }
 
 .input-modal-container{
