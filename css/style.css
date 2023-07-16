@@ -815,6 +815,11 @@ background-color: var(--active-color);
 border: none;
 }
 
+.original-checkbox:checked .custom-checkbox-modal{
+    fill: var(--light-section-color);
+        background-color: var(--active-color);
+        border: none;
+}
 
 .custom-checkbox-modal{
     width: 16px;
