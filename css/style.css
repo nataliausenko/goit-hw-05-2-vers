@@ -723,6 +723,7 @@ margin-bottom: 16px;
     position: relative;
     display: block;
     margin-bottom: 4px;
+    
 }
 
 .input-modal{
@@ -756,24 +757,28 @@ position: relative;
 
 }
 
+.textarea-modal{
+    resize: none;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 12px;
+    color: rgba(46, 47, 66, 0.4);
+    outline: transparent;
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .textarea-modal::placeholder{
     color: rgba(46, 47, 66, 0.40);
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.48px;
-}
-
-.textarea-modal{
-    resize: none;
-    width: 360px;
-    min-height: 120px;
-    border: 1px solid rgba(46, 47, 66, 0.40);
-    border-radius: 4px;
-    padding: 8px 16px;
-    font-size: 12px;
-    color: currentColor;
-    outline: transparent;
-    font-size: 18px;
 }
 
 /* .textarea-modal:hover{
