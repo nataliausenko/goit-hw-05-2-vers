@@ -750,6 +750,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .label-container{
     margin-bottom: 8px;
+    width: 360px;
 }
 .label-container-textarea{
     margin-bottom: 16px;
@@ -801,11 +802,6 @@ border: 1px solid var(--primary-brand-color);
     fill: var(--primary-brand-color);
 }
 
-
-
-.label-modal:hover + .textarea-modal {
-    border: 1px solid var(--primary-brand-color);
-}
 .label-modal:focus + .textarea-modal{
     border: 1px solid var(--primary-brand-color);
 }
@@ -815,12 +811,30 @@ margin-top: 8px;
 margin-bottom: 24px;
 }
 
+.original-checkbox:checked .custom-checkbox-modal{
+fill: var(--light-section-color);
+background-color: var(--active-color);}
+
+.custom-checkbox-modal{
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    margin-right: 8px;
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
 .privacy-pol-text{
 color: var(--primary-brand-color);
 text-decoration: underline;
 }
 
 .modal-button{
+    display: block;
     border: none;
     padding: 16px 32px;
     background-color: var(--primary-brand-color);
